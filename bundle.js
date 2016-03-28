@@ -44,10 +44,10 @@ angular
        return el.data.title;
      });
      $scope.clues = allValues.map(function (el) {
-
-       return el.data;
+     return el.data;
      });
-     console.log($scope.clues);
+
+  
 
 })
 })

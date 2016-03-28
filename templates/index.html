@@ -7,18 +7,21 @@
   {{score}}
 </div>
 
-<div  class="row" ng-repeat="clue in clues">
-
-  <h3>{{clue.title}}</h3>
-  <p ng-repeat="item in clue.clues">
-    Question: {{ item.question}}
-    score: {{item.value}}
-    answer: {{item.answer}}
+<div ng-repeat="category in categories" class="col-md-2">
+  <p class="text-muted">
+  {{ category }}
   </p>
+
 </div>
 
-  <div ng-repeat="category in categories" class="col-md-2">
-    <p class="text-muted">
-    {{ category }}
-    </p>
+<div class="col-md-2" ng-repeat="category in categories">
+  <jeopardy-reader question=category.data></jeopardy-reader>
 </div>
+
+
+<div  class="col-md-2" ng-repeat="clue in clues">
+<button type="button" name="score" class="scores" ng-repeat="item in clue.clues">{{item.value}}</button>
+
+</div>
+<!--Question: {{ item.question}}-->
+  <!--<h3>{{clue.title}}</h3>-->

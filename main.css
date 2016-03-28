@@ -2,15 +2,24 @@ body {
   background-color: #51eac7;
 }
 
-.col-md-2 {
-  text-align: center;
-  margin-top: 60px;
-  font-size: 20px;
-
-}
 
 .main-title {
   text-align: center;
   font-size: 36px;
   color: #084537;
+}
+.col-md-2 {
+  margin-top: 20px;
+}
+
+.scores {
+  width:70px;
+  height: 45px;
+  display: block;
+  margin-left: 10px;
+}
+
+p {
+  font-size: 18px;
+  margin-left: 10px;
 }
