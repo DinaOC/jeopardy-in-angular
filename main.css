@@ -1,0 +1,16 @@
+body {
+  background-color: #51eac7;
+}
+
+.col-md-2 {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 20px;
+
+}
+
+.main-title {
+  text-align: center;
+  font-size: 36px;
+  color: #084537;
+}

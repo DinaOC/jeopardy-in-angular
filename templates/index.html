@@ -1,0 +1,24 @@
+<div class="main">
+<h1 class="main-title">Jeopardy</h1>
+</div>
+
+
+<div class="score">
+  {{score}}
+</div>
+
+<div  class="row" ng-repeat="clue in clues">
+
+  <h3>{{clue.title}}</h3>
+  <p ng-repeat="item in clue.clues">
+    Question: {{ item.question}}
+    score: {{item.value}}
+    answer: {{item.answer}}
+  </p>
+</div>
+
+  <div ng-repeat="category in categories" class="col-md-2">
+    <p class="text-muted">
+    {{ category }}
+    </p>
+</div>
