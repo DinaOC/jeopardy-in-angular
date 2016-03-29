@@ -1,22 +1,29 @@
 
 <div>{{question.title}}</div>
 <div ng-repeat="data in question.clues">
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#{{data.id}}" id="thing{{data.id}}"><p>Question {{ data.value }}</p></button>
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#{{data.id}}">
+    Question {{ data.value }}
+  </button>
+  <div id="{{data.id}}" class="modal fade" role="dialog">
+    <div class="modal-dialog">
 
-<!-- Modal -->
-<div id="{{data.id}}" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
-      </div>
-      <div class="modal-body">
-        <p>Some text in the modal.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
+  </div>
+
+</div>
+
+
+<!-- Modal -->
